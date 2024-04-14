@@ -1,0 +1,77 @@
+  496  cd Documents/
+  497  ls
+  498  mkdir SI_2024_lab1_124008
+  499  cd SI_2024_lab1_124008/
+  500  git init 
+  501  git remote add origin https://github.com/martinsi24/SI_2024_lab1_124008.git
+  502  git remote 
+  503  ls
+  504  ls -a
+  505  ls .git
+  506  nano README.md
+  507  ls
+  508  git status
+  509  git add --all
+  510  git status
+  511  git branch 
+  512  git branch list
+  513  git commit -m 'Initial commit'
+  514  git config --global user.email "stojkovski.martin.1@students.finki.ukim.mk"
+  515  git config --global user.name "martinsi24"
+  516  git commit -m 'Initial commit'
+  517  git push -u origin master 
+  518  git status
+  519  git push -u origin master 
+  520  git remote add origin https://github.com/martinsi24/SI_2024_lab1_124008.git
+  521  git push -u origin master 
+  522  nano SILab1_1.java
+  523  nano SILab1_2.java
+  524  nano SILab1Main.java
+  525  git add --all
+  526  git commit -m 'Add starter code'
+  527  git push -u origin master 
+  528  git checkout -b bug1
+  529  nano SILab1_1.java 
+  530  git status 
+  531  git commit -m 'Fix wrong condition in filterOddLengthStrings'
+  532  git commit -a -m 'Fix wrong condition in filterOddLengthStrings'
+  533  git diff
+  534  git reset --hard HEAD^
+  535  git status
+  536  git log
+  537  git checkout master 
+  538  git branch -h
+  539  git checkout -b bug2
+  540  git checkout bug1
+  541  nano SILab1_1.java 
+  542  git commit -a -m 'Fix wrong condition in filterOddLengthStrings'
+  543  git checkout bug2
+  544  nano SILab1_2.java 
+  545  git commit -a -m 'Fix wrong condition in makeBigStringFrom'
+  546  git log
+  547  git checkout bug1
+  548  nano SILab1Main.java 
+  549  git commit -a -m 'Call method filterOddLengthStrings in main class'
+  550  git checkout bug2
+  551  nano SILab1Main.java 
+  552  git commit -a -m 'Call method makeBigStringFrom in main class'
+  553  git push -u origin master
+  554  git checkout master 
+  555  git push -u origin bug1
+  556  git push -u origin bug2
+  557  git checkout master 
+  558  git merge bug1
+  559  git push -h
+  560  git push -u origin master 
+  561  git checkout bug2
+  562  git rebase master 
+  563  git checkout bug2 
+  565  nano SILab1Main.java 
+  569  git checkout master
+  570  git merge bug2
+  571  git push -u origin master 
+  572  git push -u origin bug1
+  581  git push --force -u origin bug2
+  582  git branch 
+  583  git log
+  584  nano logs.txt
